@@ -9,8 +9,7 @@
 <p><span style="color: #808080;">Now, we had to check if the center of a point (which is calculated by simply adding 0.5 to the point) was within the bounds of the provided triangle. To do this, we created an inside() helper function, which takes in an (x, y) coordinate, as well as the 6 x/y values of the triangle, and then calculates which is the inside of the triangle using the three line test method of finding if a point is inside a given triangle. In this case, we returned a true value if the result was &gt;= 0, so this includes edge cases.</span></p>
 <p><span style="color: #808080;">There's a slight caveat to this. The winding order of the triangle, that is the rotational direction the points are provided in, affects the results of the inside function. We had to first check the rotation of the triangle before passing in any values, and swap two of the coordinates to flip the winding order.</span></p>
 <p><span style="color: #808080;">Once we know a point is inside the triangle, we can call the provided rasterize_point() function to fill in the sample buffer at that pixel with the provided color</span></p>
-<p><span style="color: #808080;"><img src="./p1-screenshots/task1-test4.png" alt="Basic rasterization causes some poor aliasing" /></span></p>
-<p>&nbsp;</p>
+<p><span style="color: #808080;"><img src="./p1-screenshots/task1-test4.png" alt="" width="512" height="345" /></span></p>
 <h3 style="text-align: center;"><span style="color: #666699;">Task 2: Antialiasing by Supersampling</span></h3>
 <h3 style="text-align: center;"><span style="color: #666699;">Task 3: Transforms</span></h3>
 <h3 style="text-align: center;"><span style="color: #666699;">Task 4: Barycentric coordinates</span></h3>
